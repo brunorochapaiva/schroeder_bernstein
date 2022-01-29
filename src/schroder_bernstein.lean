@@ -54,7 +54,7 @@ end
 lemma same_chain_equivalence {α : Type u} {f : α → α} (hf : function.injective f) : equivalence (same_chain f) :=
 ⟨same_chain_reflexive f, same_chain_symmetric f, same_chain_transitive hf⟩
 
-theorem schroeder_bernstein {α : Type u} {β : Type v} {f : α → β} {g : β → α}
+theorem schroder_bernstein {α : Type u} {β : Type v} {f : α → β} {g : β → α}
   (hf : function.injective f) (hg : function.injective g)
   : ∃ (h : α → β), function.bijective h :=
 begin
